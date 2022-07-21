@@ -32,8 +32,12 @@ window.addEventListener("load", function () {
   toDoList.addEventListener("click", function (e) {
     if (e.target.matches(".todo-remove")) {
       //remove task in DOM
-      const currentTask = e.target.parentNode;
-      currentTask.parentNode.removeChild(currentTask);
+      const currentTaskDOM = e.target.parentNode;
+      currentTaskDOM.parentNode.removeChild(currentTaskDOM);
+      // remove task in localStorage
+      const toDoText = e.target.previousElementSibling.textContent;
+      const newToDos = toDos.filter((item) => item !== toDoText);
+      localStorage.setItem("todoList", JSON.stringify(newToDos));
     }
   });
 });
