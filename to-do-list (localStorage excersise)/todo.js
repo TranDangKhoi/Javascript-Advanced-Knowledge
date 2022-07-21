@@ -28,4 +28,12 @@ window.addEventListener("load", function () {
     // console.log(toDoVal);
     this.elements["todo"].value = "";
   });
+  // Handle Remove Task
+  toDoList.addEventListener("click", function (e) {
+    if (e.target.matches(".todo-remove")) {
+      //remove task in DOM
+      const currentTask = e.target.parentNode;
+      currentTask.parentNode.removeChild(currentTask);
+    }
+  });
 });
