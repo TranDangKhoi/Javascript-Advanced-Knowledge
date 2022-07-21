@@ -1,9 +1,9 @@
 window.addEventListener("load", function () {
   const toDoForm = document.querySelector(".todo-form");
   const toDoList = document.querySelector(".todo-list");
-  let toDos = localStorage ? JSON.parse(localStorage.getItem("toDoList")) : [];
-  console.log(Array.isArray(toDos));
-  if (toDos.length > 0) {
+  let toDos =
+    localStorage.length > 0 ? JSON.parse(localStorage.getItem("todoList")) : [];
+  if (Array.isArray(toDos) && toDos.length >= 0) {
     [...toDos].forEach((item) => createToDoItem(item));
   }
   function createToDoItem(toDoVal) {
@@ -24,8 +24,8 @@ window.addEventListener("load", function () {
     // Mỗi lần add một cái sẽ ra một cái -> không thể lưu từng biến được mà phải lưu thành mảng
     toDos.push(toDoVal);
     // console.log("log ~ toDos", toDos);
-    localStorage && localStorage.setItem("toDoList", JSON.stringify(toDos));
-    console.log(toDoVal);
+    localStorage && localStorage.setItem("todoList", JSON.stringify(toDos));
+    // console.log(toDoVal);
     this.elements["todo"].value = "";
   });
 });
