@@ -100,3 +100,13 @@ console.log(str3.match(/\d*/g)); // Output: ["12345",""];
 console.log("-----GROUP-----");
 console.log(/(\d{3})(\w+)/.test("123")); // false
 console.log(/(\d{3})?(\w+)/.test("123")); // true
+
+// VII. Escaping \ / [ ] ( ) { } ? + * | . ^ $
+// Escaping dùng để nhét các ký tự đặc biệt vào regex mà không lo nó bị biến đổi thành Quantifiers hoặc thứ gì đó khác
+console.log(/\?/.test("?")); //TRUE
+console.log(/\*/.test("*"));
+// VIII. Boudaries \b \B
+// \b: Trả về các chuỗi đứng 1 mình
+"my name is Khoi".match(/\bKhoi/g); //Ouput: ["Khoi"];
+//  \B: Ngược lại với /b, đứng liền tù tì với các từ khác nữa
+"my name isKhoi".match(/\BKhoi/); //Ouput: ["Khoi"];
