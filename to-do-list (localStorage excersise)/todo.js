@@ -19,6 +19,7 @@ window.addEventListener("load", function () {
     e.preventDefault();
     // Lấy ra value từ input
     const toDoVal = this.elements["todo"].value;
+    if (!toDoVal) return;
     createToDoItem(toDoVal);
     // save to localStorage
     // Mỗi lần add một cái sẽ ra một cái -> không thể lưu từng biến được mà phải lưu thành mảng
