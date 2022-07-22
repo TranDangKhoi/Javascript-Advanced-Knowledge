@@ -39,10 +39,10 @@ Live Website:
   - Flag (g,i,m)
   - Groups() : Hợp thể các biểu thức regex vào nhau
   - Boundaries (\b, \B)
-  - Last but not least, replace chuỗi string bằng regex trong Javascript
-    VD:
-    const str = "hello, hello, hello!!!";
-    str.replace(/hello/g, "hi")
-    Output: "hi, hi, hi!!!"
+  - Last but not least, replace chuỗi string bằng regex trong Javascript <br>
+    VD: <br>
+    const str = "hello, hello, hello!!!"; <br>
+    str.replace(/hello/g, "hi") <br>
+    Output: "hi, hi, hi!!!" <br>
 
 - Các kí hiệu trên thì bất cứ ai đang đọc tự tìm hiểu nha hê, mình chịu không giải nghĩa hết từng cái được
