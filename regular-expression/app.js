@@ -110,3 +110,12 @@ console.log(/\*/.test("*"));
 "my name is Khoi".match(/\bKhoi/g); //Ouput: ["Khoi"];
 //  \B: Ngược lại với /b, đứng liền tù tì với các từ khác nữa
 "my name isKhoi".match(/\BKhoi/); //Ouput: ["Khoi"];
+// IX. Replace trong regex
+const str4 = "hello, hello, hello!";
+console.log(str4.replace("hello", "hi"));
+// Ouput: hi, hello, hello
+// string,replace(regex, value);
+console.log(str4.replace(/hello/g, "hi"));
+// Ouput: hi, hi, hi!
+const str5 = "Welcome 1234567";
+str5.match(/\d+/g);
