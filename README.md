@@ -45,4 +45,4 @@ Live Website:
     str.replace(/hello/g, "hi") <br>
     Output: "hi, hi, hi!!!" <br>
 
-- Các kí hiệu trên thì bất cứ ai đang đọc tự tìm hiểu nha hê, mình chịu không giải nghĩa hết từng cái được
+- Các kí hiệu trên thì bất cứ ai đang đọc tự tìm hiểu nha hê, mình lười không giải nghĩa hết từng cái được
