@@ -25,7 +25,8 @@ window.addEventListener("load", function () {
     // Mỗi lần add một cái sẽ ra một cái -> không thể lưu từng biến được mà phải lưu thành mảng
     toDos.push(toDoVal);
     // console.log("log ~ toDos", toDos);
-    localStorage && localStorage.setItem("todoList", JSON.stringify(toDos));
+    localStorage.length > 0 &&
+      localStorage.setItem("todoList", JSON.stringify(toDos));
     // console.log(toDoVal);
     this.elements["todo"].value = "";
   });
