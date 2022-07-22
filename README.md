@@ -1,4 +1,6 @@
-# This repository is about me, practicing javascript advanced knowledge so that i won't forget them, so i can touch some grass and get a real job later :(
+# This repository is about me, practicing javascript advanced knowledge so that i won't forget them.
+
+# After this, i can finally go touch some grass and get a real job :(
 
 Live Website:
 <a href="https://trandangkhoi.github.io/Javascript-Advanced-Knowledge/index.html">Go to deployed website</a>
@@ -22,3 +24,5 @@ Live Website:
 - CHÚ Ý:
   - Không lưu các JSON Web Tokens(JWT) trong local storage
   - Nếu các link bạn nhúng vào website bị hack thì các hacker có thể dễ dàng lấy hết thông tin trong local storage của người dùng
+
+# Regular Expression hay Regex là gì ?
