@@ -1,11 +1,11 @@
 # This repository is about me, practicing javascript advanced knowledge so that i won't forget them.
 
-# After this, i can finally go touch some grass and get a real job :(
+**After this, i can finally go touch some grass and get a real job :(**
 
 Live Website:
 <a href="https://trandangkhoi.github.io/Javascript-Advanced-Knowledge/index.html">Go to deployed website</a>
 
-# Local Storage là gì ?
+# Local Storage là gì ? (Code thì đơn giản nhưng để hiểu sâu thì khá phức tạp :') cry cry)
 
 - Local Storage là kho lưu trữ ở dưới dạng local, lưu bên trong trình duyệt của máy tính và có type là một object
 - Một vài điều thú vị và ưu điểm của Local Storage:
@@ -25,4 +25,24 @@ Live Website:
   - Không lưu các JSON Web Tokens(JWT) trong local storage
   - Nếu các link bạn nhúng vào website bị hack thì các hacker có thể dễ dàng lấy hết thông tin trong local storage của người dùng
 
-# Regular Expression hay Regex là gì ?
+# Regular Expression hay Regex là gì ? (kiến thức khó học thuộc và khó nhớ)
+
+- Regular expression hay còn có tên gọi là biểu thức chính quy, được dùng để xử lý chuỗi nâng cao thông qua biểu thức riêng -> những biểu thức này sẽ có những nguyên tắc riêng và bạn phải tuân theo nguyên tắc đó thì biểu thức của bạn mới hoạt động được.
+- Hầu hết các ngôn ngữ lập trình nào cũng có khái niệm về RegEx (PHP, Javascript, Java, ...) nhưng hôm nay mình sẽ đưa ra ví dụ về Regex trong Javascript (vì mình học khá mỗi nó :'( )
+- Có tất cả 9 thứ tiêu biểu bạn cần học về regex trong Javascript:
+
+  - Cách khởi tạo một regex (/.../)
+  - Anchor (^, $)
+  - Ranges [] [a-z] [A-Z] [0-9] ...
+  - Meta sequences (\d, \D, \w, \W, \s, \S, \n, \t, ., [^])
+  - Quantifiers ({n}, {n,m} , + , ?, \*)
+  - Flag (g,i,m)
+  - Groups() : Hợp thể các biểu thức regex vào nhau
+  - Boundaries (\b, \B)
+  - Last but not least, replace chuỗi string bằng regex trong Javascript
+    VD:
+    const str = "hello, hello, hello!!!";
+    str.replace(/hello/g, "hi")
+    Output: "hi, hi, hi!!!"
+
+- Các kí hiệu trên thì bất cứ ai đang đọc tự tìm hiểu nha hê, mình chịu không giải nghĩa hết từng cái được
