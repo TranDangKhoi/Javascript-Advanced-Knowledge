@@ -1,7 +1,7 @@
 // Email Validation
 // abc@gmail.com abc@yahoo.com : valid
 // abcdk ktois123 : invalid
-const emailInput = document.querySelector(".input");
+const emailInput = document.querySelector(".input-email");
 emailInput.addEventListener("input", function (e) {
   const value = e.target.value;
   //   console.log(value);
@@ -12,6 +12,11 @@ emailInput.addEventListener("input", function (e) {
     e.target.classList.remove("invalid");
   } else {
     e.target.classList.add("invalid");
+    e.target.classList.remove("valid");
+  }
+
+  if (!value) {
+    e.target.classList.remove("invalid");
     e.target.classList.remove("valid");
   }
 });
