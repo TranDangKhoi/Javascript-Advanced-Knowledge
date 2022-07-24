@@ -42,10 +42,10 @@ Live Website:
   - Last but not least, replace chuỗi string bằng regex trong Javascript <br>
 
   ```js
-    VD: <br>
-    const str = "hello, hello, hello!!!"; <br>
-    str.replace(/hello/g, "hi") <br>
-    Output: "hi, hi, hi!!!" <br>
+    VD:
+    const str = "hello, hello, hello!!!";
+    str.replace(/hello/g, "hi")
+    Output: "hi, hi, hi!!!"
 
   ```
 
