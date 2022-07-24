@@ -46,3 +46,40 @@ Live Website:
     Output: "hi, hi, hi!!!" <br>
 
 - Các kí hiệu trên thì bất cứ ai đang đọc tự tìm hiểu nha hê, mình lười không giải nghĩa hết từng cái được
+
+# Async và Defer trong script tag
+
+- Async:
+  - Sử dụng async trong trường hợp khi các bạn muốn sử dụng dịch vụ bên thứ 3 (Quảng cáo Google, Facebook, ...) muốn chèn vào trang web của mình -> thì sử dụng async để chạy độc lập, không phụ thuộc vào các script khác, không quan tâm DOM chạy hay chưa
+- Defer:
+  - Sử dụng khi muốn chạy script theo một thứ tự nhất định để các script có thể kế thừa function của nhau và để DOM load hết rồi mới load script
+
+# i++ và ++i khác nhau thế nào ?
+
+- i++ là gán giá trị cho i trước rồi tăng sau
+- ++i là tăng trước rồi gán giá trị cho i sau
+
+# Closure in Loop
+
+# Local Storage và Session Storage
+
+- Local Storage thì khi bạn đóng tab đi mở lại nó vẫn lưu trong storage cho bạn
+- Session Storage thì khi đóng tab đi mở lại nó sẽ mất hoàn toàn và không lưu lại gì hết
+
+# Những trường hợp không nên sử dụng arrow function
+
+- Khi làm việc với những event handler function mà cần sử dụng từ khóa this. Bởi khi dùng arrow function thì function sẽ không hiểu this là gì cả
+
+- Khi làm việc với function trong object
+
+```js
+  VD:
+  const student = {
+  mark: 5;
+  increment: () => {
+  return this.mark++;
+    }
+  }
+
+  console.log(student.increment()); // NaN
+```
