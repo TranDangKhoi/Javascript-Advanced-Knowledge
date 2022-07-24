@@ -40,10 +40,14 @@ Live Website:
   - Groups() : Hợp thể các biểu thức regex vào nhau
   - Boundaries (\b, \B)
   - Last but not least, replace chuỗi string bằng regex trong Javascript <br>
+
+  ```js
     VD: <br>
     const str = "hello, hello, hello!!!"; <br>
     str.replace(/hello/g, "hi") <br>
     Output: "hi, hi, hi!!!" <br>
+
+  ```
 
 - Các kí hiệu trên thì bất cứ ai đang đọc tự tìm hiểu nha hê, mình lười không giải nghĩa hết từng cái được
 
