@@ -96,7 +96,7 @@ Live Website:
 function countDown(number) {
   //  countDown ở đây là "nó"
   console.log(number);
-  countDown(number - 1); // "Nó" gọi là chính "nó - 1"
+  countDown(number - 1); // "Nó" gọi lại chính "nó - 1"
 }
 countDown(10);
 ```
