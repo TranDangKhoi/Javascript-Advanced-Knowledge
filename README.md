@@ -87,3 +87,34 @@ Live Website:
 
   console.log(student.increment()); // NaN
 ```
+
+# Đệ Quy Aka Recursion ("Nó" gọi lại chính nó)
+
+- Ví dụ một bài toán đếm ngược dưới đây nếu đếm ngược từ 10 ta có thể làm đơn giản = vòng lặp for NHƯNG KHÔNG, mình không thích làm theo cách dơn giản, phải phức tạp một chút
+
+```js
+function countDown(number) {
+  //  countDown ở đây là "nó"
+  console.log(number);
+  countDown(number - 1); // "Nó" gọi là chính "nó - 1"
+}
+countDown(10);
+```
+
+- Nhưng mà viết ở trên nếu ta check màn hình console ta thấy nó chạy hoài tới âm vô cực ==> phải dừng đệ quy lại không thì rất nguy hiểm
+
+- if (condition) stop recursive else run recursive
+
+Viết lại như sau:
+
+```js
+function countDown(number) {
+  //  countDown ở đây là "nó"
+  console.log(number);
+  let otherNumber = number - 1;
+  if (otherNumber > 0) {
+    countDown(otherNumber);
+  }
+}
+countDown(10);
+```
